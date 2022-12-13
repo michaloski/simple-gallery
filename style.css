@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-container{
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    border: 1px solid black;
+    overflow: hidden;
+
+}
+.photo{
+    position: absolute;
+    width: 400px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    /* THIS creates the animation! */
+    transition: transform 1s;
+}
+.photo > img{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
+button{
+    position: absolute;
+    z-index: 10;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.left-btn{
+    left: 30%;
+    padding: 20px;
+}
+.right-btn{
+    right: 30%;
+    padding: 20px;
+}
